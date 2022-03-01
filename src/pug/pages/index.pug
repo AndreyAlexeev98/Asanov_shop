@@ -6,6 +6,83 @@ block variables
     - var pageClass='index-page';
 
 block content
-  h1 hello world
-  img(src="/assets/img/sea.jpg")
-  +item('Заголовок', 'Описание')
+  .main__header
+    input.serch-elem(type='text' placeholder='Поиск: Диван для кухни')
+    button.btn-sign-in Войти
+    .cart
+      .cart__icon-wrap
+        img.cart__icon(src='./src/icons/cart.png' alt='logo asanov')
+        .cart__counter 10
+      .cart__price.price
+        .price__sum 25 000
+        .price__currency ₽
+  .main__content
+    .cards
+      h2.cards__title Лучшие предложения месяца
+      .cards__controls.controls
+        button.controls__left
+          img(src='./src/icons/arrow-left.png' alt='arrow left')
+        button.controls__right
+          img(src='./src/icons/arrow-right.png' alt='arrow right')
+      .container
+        ul.row.align-items-start.cards__list
+          li.cards__item.card.col
+            .card__action
+            img.card__image(src='./src/content/card-image.png' alt='товар')
+            p.card__desc Диван с декоративными подушками "Олимп" (Нексус)
+            .card__info
+              .card__info-left
+                .card__old-price.price
+                  .price__sum 25 000
+                  .price__currency ₽
+                .card__new-price.price
+                  .price__sum 25 000
+                  .price__currency ₽
+                .card__status В наличии
+              .card__info-right
+                button.btn-rounter.btn-buy  Купить
+          li.cards__item.card.col
+            .card__action
+            img.card__image(src='./src/content/card-image.png' alt='товар')
+            p.card__desc Диван с декоративными подушками "Олимп" (Нексус)
+            .card__info
+              .card__info-left
+                .card__old-price.price
+                  .price__sum 25 000
+                  .price__currency ₽
+                .card__new-price.price
+                  .price__sum 25 000
+                  .price__currency ₽
+                .card__status В наличии
+              .card__info-right
+                button.btn-rounter.btn-buy  Купить
+          li.cards__item.card.col
+            .card__action
+            img.card__image(src='./src/content/card-image.png' alt='товар')
+            p.card__desc Диван с декоративными подушками "Олимп" (Нексус)
+            .card__info
+              .card__info-left
+                .card__old-price.price
+                  .price__sum 25 000
+                  .price__currency ₽
+                .card__new-price.price
+                  .price__sum 25 000
+                  .price__currency ₽
+                .card__status В наличии
+              .card__info-right
+                button.btn-rounter.btn-buy  Купить
+          li.cards__item.card.col
+            .card__action
+            img.card__image(src='./src/content/card-image.png' alt='товар')
+            p.card__desc Диван с декоративными подушками "Олимп" (Нексус)
+            .card__info
+              .card__info-left
+                .card__old-price.price
+                  .price__sum 25 000
+                  .price__currency ₽
+                .card__new-price.price
+                  .price__sum 25 000
+                  .price__currency ₽
+                .card__status В наличии
+              .card__info-right
+                button.btn-rounter.btn-buy  Купить

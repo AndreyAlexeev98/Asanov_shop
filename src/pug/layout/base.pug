@@ -6,13 +6,17 @@ doctype html
 html(lang='ru')
     head
         meta(charset='utf-8')
+        meta(name ='viewport' content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
         title #{title}
         meta(name="description", content=description)
 
     body(class=pageClass)
-        include ../includes/modules/header
-        div
-            block content
-        include ../includes/modules/footer
+        .wrapper-with-nav
+            include ../includes/modules/nav
+            .wrapper
+                include ../includes/modules/header
+                main.main
+                    block content
+                include ../includes/modules/footer
 
     //- block script
