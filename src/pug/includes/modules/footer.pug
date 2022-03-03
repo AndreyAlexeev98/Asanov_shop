@@ -1,11 +1,11 @@
-footer.footer
+footer.footer.container-layout
   .footer__top
     button.address Магазины
   .footer__middle
     .container
       .row.align-items-start
         .col.site-menu
-          p.site-menu__title Как мы работаем
+          .site-menu__title Как мы работаем
           ul.site-menu__list
             li.site-menu__item
               a.site-menu__link(href='#') О нас
@@ -18,72 +18,74 @@ footer.footer
             li.site-menu__item
               a.site-menu__link(href='#') Рассрочка
         .col.site-menu
-          p.site-menu__title Как мы работаем
+          .site-menu__title Другая информация
           ul.site-menu__list
             li.site-menu__item
-              a.site-menu__link(href='#') О нас
+              a.site-menu__link(href='#') Блог
             li.site-menu__item
-              a.site-menu__link(href='#') Сборка и доставка
+              a.site-menu__link(href='#') Контакты
             li.site-menu__item
-              a.site-menu__link(href='#') Оплата и возврат
+              a.site-menu__link(href='#') Социальные сети
             li.site-menu__item
-              a.site-menu__link(href='#') Гарантия
+              a.site-menu__link(href='#') Бренды мебели
             li.site-menu__item
-              a.site-menu__link(href='#') Рассрочка
+              a.site-menu__link(href='#') Карта сайта
         .col.site-menu
-          p.site-menu__title Как мы работаем
+          .site-menu__title Сотрудничество
           ul.site-menu__list
             li.site-menu__item
-              a.site-menu__link(href='#') О нас
+              a.site-menu__link(href='#') Поставщикам
             li.site-menu__item
-              a.site-menu__link(href='#') Сборка и доставка
+              a.site-menu__link(href='#') Оптовикам
             li.site-menu__item
-              a.site-menu__link(href='#') Оплата и возврат
+              a.site-menu__link(href='#') Франчайзинг
             li.site-menu__item
-              a.site-menu__link(href='#') Гарантия
-            li.site-menu__item
-              a.site-menu__link(href='#') Рассрочка
+              a.site-menu__link(href='#') Подписка
         .col.site-menu
-          p.site-menu__title Как мы работаем
+          .site-menu__title Отзывы о нас
           ul.site-menu__list
-            li.site-menu__item
-              a.site-menu__link(href='#') О нас
-            li.site-menu__item
-              a.site-menu__link(href='#') Сборка и доставка
-            li.site-menu__item
-              a.site-menu__link(href='#') Оплата и возврат
-            li.site-menu__item
-              a.site-menu__link(href='#') Гарантия
+            li.site-menu__item.review
+              a.site-menu__link(href='#').review__link
+                .review__name.yandex
+                .review__rating 
+            li.site-menu__item.review
+              a.site-menu__link(href='#').review__link
+                .review__name.google
+                .review__rating 
+            li.site-menu__item.review
+              a.site-menu__link(href='#').review__link
+                .review__name.togis
+                .review__rating 
       .row
         .col.socials.site-menu
-          p.site-menu__title.socials__title Мы в соцсетях
+          .site-menu__title.socials__title Мы в соцсетях
           ul.socials__list
             li.socials__item
               a.socials__link(href='#')
-                img.socials__item(src='' alt='vkontakte')
+                .socials__item.vk
             li.socials__item
               a.socials__link(href='#')
-                img.socials__item(src='' alt='youtube')
+                .socials__item.youtube
             li.socials__item
               a.socials__link(href='#')
-                img.socials__item(src='' alt='instagram')
+                .socials__item.instagram
             li.socials__item
               a.socials__link(href='#')
-                img.socials__item(src='' alt='facebook')
+                .socials__item.facebook
             li.socials__item
               a.socials__link(href='#')
-                img.socials__item(src='' alt='odnoklassniki')
+                .socials__item.odnoklassniki
         .col-8.site-menu
-          p.site-menu__title Мы принимаем к оплате
+          .site-menu__title Мы принимаем к оплате
           ul.payment
             li.payment__item
-              img.payment__icon(src='#' alt='mastercard')
+              .payment__icon.mastercard
             li.payment__item
-              img.payment__icon(src='#' alt='visa')
+              .payment__icon.visa
             li.payment__item
-              img.payment__icon(src='#' alt='Мир')
+              .payment__icon.mir
             li.payment__item
-              img.payment__icon(src='#' alt='Яндекс деньги')
+              .payment__icon.yandex-money
   .footer__bottom
     .policy
       a.policy__link(href='#') Политика конфиденциальности

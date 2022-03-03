@@ -1,0 +1,28 @@
+.cards {
+  &__title {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+  }
+  &__controls {
+    margin-bottom: 12px;
+    margin-left: auto;
+  }
+  &__item {
+    border: 1px solid #E6E4E7;
+    border-radius: 8px;
+    padding: 0;
+    position: relative;
+    padding-bottom: 8px;
+    transition: border-color .3s;
+    display: flex;
+    flex-direction: column;
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+    &:hover {
+      border-color: #EE2A74;
+      transition: border-color .3s;
+    }
+  }
+}

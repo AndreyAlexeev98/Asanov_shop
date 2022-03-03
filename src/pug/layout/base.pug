@@ -14,9 +14,10 @@ html(lang='ru')
         .wrapper-with-nav
             include ../includes/modules/nav
             .wrapper
-                include ../includes/modules/header
-                main.main
-                    block content
+                .wrapper__content
+                    include ../includes/modules/header
+                    main.main.container-layout
+                        block content
                 include ../includes/modules/footer
 
     //- block script

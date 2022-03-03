@@ -1,0 +1,39 @@
+.controls {
+  width: max-content;
+  &__left,
+  &__right {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #1A1A1A;
+    position: relative;
+    transition: border-color .3s, background-color .3s; 
+    .arrow-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-26%,-44%);
+      width: 10px;
+      height: 14px;
+      fill: #fff;
+      stroke: #1A1A1A;
+      transition: stroke .3s;
+    }
+    &:hover {
+      border-color: #E6E4E7;
+      background-color: #F2F1F3;
+      transition: border-color .3s, background-color .3s; 
+    }
+    &.disabled {
+      border-color: #E6E4E7;
+      cursor: default;
+      background-color: transparent;
+    }
+  }
+  &__left {
+    margin-right: 16px;
+    .arrow-icon {
+      transform: translate(-64%,-58%) rotate(180deg);
+    }
+  }
+}

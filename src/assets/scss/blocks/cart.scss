@@ -1,0 +1,33 @@
+.cart {
+  display: flex;
+  align-items: center;
+  &__icon-wrap {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-right: 9px;
+  }
+  &__counter-background {
+    position: absolute;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #EE2A74;
+    transform: translateX(9px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__counter-value {
+    color: #fff;
+    font-weight: bold;
+    font-size: 9px;
+  }
+  &__price {
+    font-weight: bold;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

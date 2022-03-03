@@ -1,0 +1,90 @@
+.menu {
+  &__list:not(:last-child) {
+    border-bottom: 1px solid $color_Grey-lines;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+  }
+  &__item {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 10px 30px 10px 18px;
+    &::before {
+      margin-right: 6px;
+      width: 28px;
+      height: 28px;
+    }
+    &#couch::before {
+      background-image: url(/assets/img/icons/sofa.svg);
+    }
+    &#wardrobes::before {
+      background-image: url(/assets/img/icons/wardrobes.svg); 
+    }
+    &#kitchen::before {
+      background-image: url(/assets/img/icons/kitchen.svg); 
+    }
+    &#guest::before {
+      background-image: url(/assets/img/icons/guest.svg); 
+    }
+    &#bedroom::before {
+      background-image: url(/assets/img/icons/bedroom.svg);
+    }
+    &#hallway::before {
+      background-image: url(/assets/img/icons/hall.svg); 
+    }
+    &#childrens::before {
+      background-image: url(/assets/img/icons/childrens.svg); 
+    }
+    &#tables::before {
+      background-image: url(/assets/img/icons/table.svg); 
+    }
+    &#office::before {
+      background-image: url(/assets/img/icons/office.svg); 
+    }
+    &#rotang::before {
+      background-image: url(/assets/img/icons/rotang.svg); 
+    }
+    &#premium::before {
+      background-image: url(/assets/img/icons/premium.svg); 
+    }
+    &#criterion::before {
+      background-image: url(/assets/img/icons/more.svg); 
+    }
+    &::after,&::before {
+      content: '';
+    }
+    &::after {
+      width: 8px;
+      height: 10px;
+      margin-left: auto;
+      background-image: url(/assets/img/icons/arrow_right.svg);
+    }
+    &.menu__item--not-arrow::after {
+      display: none;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $color_Light-pink;
+      cursor: pointer;
+      // div[class*=dropdown-] {
+      //   visibility: visible;
+      //   opacity: 1;
+      //   transition: 750ms ease all;
+      // }
+      // div[class*=dropdown-] {
+      //   border: 3px solid green;
+      //   width: 100%;
+      //   max-width: 280px;
+      // }
+    }
+    // div[class*=dropdown-] {
+    //   position: absolute;
+    //   display: block;
+    //   margin: -61px 0 0 225px;
+    //   visibility: hidden;
+    //   opacity: 0;
+    //   transition: 250ms ease all;
+    // }
+  }
+}

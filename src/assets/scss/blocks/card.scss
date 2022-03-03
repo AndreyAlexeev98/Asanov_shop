@@ -1,0 +1,98 @@
+.card {
+  &__action {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    padding: 10px 8px;
+    border-radius: 8px 8px 8px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    &--yellow {
+      background-color: #F2C94C;
+      color: #1A1A1A;
+      .card__action-text:after {
+        background-image: url(); 
+      }
+    }
+    &--green {
+      background-color: #27AE60;
+      .action-icon {
+        width: 14px;
+        height: 14px;
+      }
+    }
+    &--pink {
+      background-color: #EE2A74;
+      .action-icon {
+        fill: #fff;
+      }
+    }
+    .action-icon {
+      width: 14px;
+      height: 14px;
+      margin-right: 5px;
+    }
+    .card__action-text {
+      font-weight: bold;
+    }
+  }
+  &__image {
+    margin-bottom: 8px;
+  }
+  &__desc,
+  &__info,
+  &__status {
+    padding: 0 8px;
+  }
+  &__desc {
+    margin-bottom: 24px;
+    flex: 1;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  &__old-price {
+    font-size: 12px;
+    line-height: 1.3;
+    text-decoration-line: line-through;
+    color: #A2A0A3;
+  }
+  &__new-price.price {
+    color: #1A1A1A;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.1;
+  }
+  &__status {
+    display: flex;
+    align-items: center;
+    &:before {
+      content: '';
+      background-image: url(/assets/img/icons/car_small.svg);
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+    }
+  }
+  &__hidden-info {
+    margin-top: 8px;
+    padding: 0 8px;
+    font-size: 12px;
+    line-height: 1.3;
+    &.hidden-info {
+      display: none;
+      &__title {
+        margin-bottom: 2px;
+        color: #A2A0A3;
+      }
+      &__text:not(:last-child) {
+        margin-bottom: 8px;
+        display: inline-block;
+      }
+    }
+  }
+}

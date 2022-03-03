@@ -1,0 +1,14 @@
+.main {
+  padding-bottom: 80px;
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 55px;
+  }
+  &__serch-elem {
+    margin-right: 24px;
+  }
+  &__cart {
+    margin-left: auto;
+  }
+}

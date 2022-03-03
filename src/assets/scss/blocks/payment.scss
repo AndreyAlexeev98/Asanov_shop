@@ -1,0 +1,29 @@
+.payment {
+  display: flex;
+  align-items: center;
+  &__item:not(:last-child) {
+    margin-right: 16px;
+  }
+  &__icon {
+    &.mastercard {
+      background-image: url(/assets/img/icons/mastercard.svg);
+      width: 29px;
+      height: 18px;
+    }
+    &.visa {
+      background-image: url(/assets/img/icons/visa.svg);
+      width: 26px;
+      height: 16px;
+    }
+    &.mir {
+      background-image: url(/assets/img/icons/mir.svg);
+      width: 56px;
+      height: 16px;
+    }
+    &.yandex-money {
+      width: 85px;
+      height: 16px;
+      background-image: url(/assets/img/icons/yandex_money.svg);
+    }
+  }
+}

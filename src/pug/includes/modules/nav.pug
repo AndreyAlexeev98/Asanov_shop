@@ -1,18 +1,39 @@
 nav.nav
   .nav__header
-    img.logo(src='./src/content/logo.png' alt='logo asanov')
+    a(href="#") 
+      img.logo(src='/assets/img/icons/main_logo.svg' alt='logo asanov')
   .nav__body.menu
     ul.menu__list
-      li.menu__item Диваны и кресла
-      li.menu__item Шкафы
-      li.menu__item Мебель для кухни
-      li.menu__item Гостинные
-      li.menu__item Спальни
-      li.menu__item Мебель для прихожей
-      li.menu__item Детская мебель
-      li.menu__item Столы и стулья
-      li.menu__item Офисная мебель
-      li.menu__item.menu__item--not-arrow Мебель из ротанга
-      li.menu__item.menu__item--not-arrow Мебель премиум-класса
+      li.menu__item#couch
+        a(href="#") Диваны и кресла
+        //- .dropdown-1.nav
+        //-   h2.dropdown__title Диваны и кресла
+        //-   ul.dropdown__list
+        //-     li.menu__item Все диваны
+        //-     li.menu__item Диваны-кровати
+        //-     li.menu__item Угловые кожаные диваны
+      li.menu__item#wardrobes
+        a(href="#") Шкафы
+      li.menu__item#kitchen
+        a(href="#") Мебель для кухни
+      li.menu__item#guest
+        a(href="#") Гостинные
+      li.menu__item#bedroom
+        a(href="#") Спальни
+      li.menu__item#hallway
+        a(href="#") Мебель для прихожей
+      li.menu__item#childrens
+        a(href="#") Детская мебель
+      li.menu__item#tables
+        a(href="#") Столы и стулья
+      li.menu__item#office
+        a(href="#") Офисная мебель
+      li.menu__item.menu__item--not-arrow#rotang
+        a(href="#") Мебель из ротанга
+      li.menu__item.menu__item--not-arrow#premium
+        a(href="#") Мебель премиум-класса
     ul.menu__list
-      li.menu__item Условия покупки
+      li.menu__item#criterion
+        a(href="#") Условия покупки
+
+

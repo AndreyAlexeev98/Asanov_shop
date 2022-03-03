@@ -1,0 +1,28 @@
+.socials{
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+  &__item {
+    width: 24px;
+    height: 24px;
+    &.vk {
+      background-image: url(/assets/img/icons/vk.svg);
+    }
+    &.youtube {
+      background-image: url(/assets/img/icons/youtube.svg);
+    }
+    &.instagram {
+      background-image: url(/assets/img/icons/instagram.svg);
+    }
+    &.facebook {
+      background-image: url(/assets/img/icons/facebook.svg);
+    }
+    &.odnoklassniki {
+      background-image: url(/assets/img/icons/odnoklassniki.svg);
+    }
+  }
+} 
