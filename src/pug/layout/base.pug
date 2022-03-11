@@ -9,15 +9,17 @@ html(lang='ru')
         meta(name ='viewport' content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
         title #{title}
         meta(name="description", content=description)
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     body(class=pageClass)
         .wrapper-with-nav
             include ../includes/modules/nav
             .wrapper
+                include ../includes/modules/header
                 .wrapper__content
-                    include ../includes/modules/header
                     main.main.container-layout
                         block content
                 include ../includes/modules/footer
+        block script
 
-    //- block script
+    

@@ -9,7 +9,10 @@ block content
   .main__header
     input.serch-elem(type='text' placeholder='Поиск: Диван для кухни')
     button.btn-search-input.main__serch-elem
-    button.btn-sign-in Войти
+    .btn-sign-in 
+      svg.accaunt-icon
+        use(xlink:href='/assets/img/icons/sprite.svg#accaunt')
+      .btn-sign-in__text Войти
     a(href='#').cart.main__cart
       .cart__icon-wrap
         img.cart__icon(src='/assets/img/icons/shopping_cart.svg' alt='shopping cart')
@@ -24,87 +27,165 @@ block content
         .icon-promo.icon-promo--pink
         h2 Лучшие предложения месяца
       .cards__controls.controls
-        button.controls__left.disabled
+        button.controls__left
           svg.arrow-icon
             use(xlink:href='/assets/img/icons/sprite.svg#arrow')
         button.controls__right
           svg.arrow-icon
             use(xlink:href='/assets/img/icons/sprite.svg#arrow')
       .container
-        ul.row.cards__list
-          li.cards__item.card.col
-            .card__action.card__action--yellow
-              svg.action-icon
-                use(xlink:href='/assets/img/icons/sprite.svg#best_price')              
-              span.card__action-text Лучшая цена
-            img.card__image(src='/assets/img/content/1.png' alt='товар')
-            p.card__desc Диван-трансформер «Камертон-2»
-            .card__info
-              .card__info-left
-                .card__old-price.price
-                  .price__sum 10 540
-                  .price__currency ₽
-                .card__new-price.price
-                  .price__sum 9 490
-                  .price__currency ₽
-              .card__info-right
-                button.btn-rounter.btn-buy  Купить
-            .card__status В наличии
-            .card__hidden-info.hidden-info
-              .hidden-info__title Механизм:
-              span.hidden-info__text Аккордеон
-              .hidden-info__title Размеры:
-              span.hidden-info__text 90см (В) × 95 см (Г) × 218см (Ш)
-              .hidden-info__title Спальное место:
-              span.hidden-info__text 160 см (Ш) × 218 см (Д)
-
-
-          li.cards__item.card.col
+        ul.row.cards__list.slider-slick
+          li.cards__item.card.col            
             .card__action.card__action--green
               img.action-icon(src='/assets/img/icons/promo_white.svg' alt='promo')
               span.card__action-text Кресло в подарок
             img.card__image(src='/assets/img/content/2.png' alt='товар')
-            p.card__desc Диван с декоративными подушками "Олимп" (Нексус)
-            .card__info
-              .card__info-left
-                .card__old-price.price
-                  .price__sum 10 540
-                  .price__currency ₽
-                .card__new-price.price
-                  .price__sum 12 290
-                  .price__currency ₽
-              .card__info-right
-                button.btn-rounter.btn-buy  Купить
-            .card__status В наличии
-          li.cards__item.card.col
-            img.card__image(src='/assets/img/content/3.png' alt='товар')
-            p.card__desc Диван "КАМЕЛИЯ"
-            .card__info
-              .card__info-left
-                .card__old-price.price
-                  .price__sum 9 150
-                  .price__currency ₽
-                .card__new-price.price
-                  .price__sum 14 490
-                  .price__currency ₽
-              .card__info-right
-                button.btn-rounter.btn-buy  Купить
-            .card__status В наличии
-          li.cards__item.card.col
-            .card__action.card__action--pink
-              svg.action-icon
-                use(xlink:href='/assets/img/icons/sprite.svg#best_price') 
-              span.card__action-text Лучшая цена
-            img.card__image(src='/assets/img/content/4.png' alt='товар')
-            p.card__desc Диван-кровать "Палермо 2" рогожка
-            .card__info
-              .card__info-left
-                .card__old-price.price
-                  .price__sum 16 810
-                  .price__currency ₽
-                .card__new-price.price
-                  .price__sum 12 790
-                  .price__currency ₽
-              .card__info-right
-                button.btn-rounter.btn-buy  Купить
-            .card__status В наличии
+            .card__colors.colors 
+              .color.color--red 
+              .color.color--orange
+              .color.color--green
+            .card__desc-wrap
+              p.card__desc Диван с декоративными подушками "Олимп" (Нексус)
+              .card__info
+                .card__info-left
+                  .card__old-price.price
+                    .price__sum 10 540
+                    .price__currency ₽
+                  .card__new-price.price
+                    .price__sum 12 290
+                    .price__currency ₽
+                .card__info-right
+                  button.btn-rounter.btn-buy  Купить
+              .card__status В наличии
+              .card__hidden-info.hidden-info
+                .hidden-info__title Механизм:
+                span.hidden-info__text Аккордеон
+                .hidden-info__title Размеры:
+                span.hidden-info__text 90см (В) × 95 см (Г) × 218см (Ш)
+                .hidden-info__title Спальное место:
+                span.hidden-info__text 160 см (Ш) × 218 см (Д)
+          li.cards__item.card.col            
+            .card__action.card__action--green
+              img.action-icon(src='/assets/img/icons/promo_white.svg' alt='promo')
+              span.card__action-text Кресло в подарок
+            img.card__image(src='/assets/img/content/2.png' alt='товар')
+            .card__colors.colors 
+              .color.color--red 
+              .color.color--orange
+              .color.color--green
+            .card__desc-wrap
+              p.card__desc Диван с декоративными подушками "Олимп" (Нексус)
+              .card__info
+                .card__info-left
+                  .card__old-price.price
+                    .price__sum 10 540
+                    .price__currency ₽
+                  .card__new-price.price
+                    .price__sum 12 290
+                    .price__currency ₽
+                .card__info-right
+                  button.btn-rounter.btn-buy  Купить
+              .card__status В наличии
+              .card__hidden-info.hidden-info
+                .hidden-info__title Механизм:
+                span.hidden-info__text Аккордеон
+                .hidden-info__title Размеры:
+                span.hidden-info__text 90см (В) × 95 см (Г) × 218см (Ш)
+                .hidden-info__title Спальное место:
+                span.hidden-info__text 160 см (Ш) × 218 см (Д)
+          li.cards__item.card.col            
+            .card__action.card__action--green
+              img.action-icon(src='/assets/img/icons/promo_white.svg' alt='promo')
+              span.card__action-text Кресло в подарок
+            img.card__image(src='/assets/img/content/2.png' alt='товар')
+            .card__colors.colors 
+              .color.color--red 
+              .color.color--orange
+              .color.color--green
+            .card__desc-wrap
+              p.card__desc Диван с декоративными подушками "Олимп" (Нексус)
+              .card__info
+                .card__info-left
+                  .card__old-price.price
+                    .price__sum 10 540
+                    .price__currency ₽
+                  .card__new-price.price
+                    .price__sum 12 290
+                    .price__currency ₽
+                .card__info-right
+                  button.btn-rounter.btn-buy  Купить
+              .card__status В наличии
+              .card__hidden-info.hidden-info
+                .hidden-info__title Механизм:
+                span.hidden-info__text Аккордеон
+                .hidden-info__title Размеры:
+                span.hidden-info__text 90см (В) × 95 см (Г) × 218см (Ш)
+                .hidden-info__title Спальное место:
+                span.hidden-info__text 160 см (Ш) × 218 см (Д)
+          li.cards__item.card.col            
+            .card__action.card__action--green
+              img.action-icon(src='/assets/img/icons/promo_white.svg' alt='promo')
+              span.card__action-text Кресло в подарок
+            img.card__image(src='/assets/img/content/2.png' alt='товар')
+            .card__colors.colors 
+              .color.color--red 
+              .color.color--orange
+              .color.color--green
+            .card__desc-wrap
+              p.card__desc Диван с декоративными подушками "Олимп" (Нексус)
+              .card__info
+                .card__info-left
+                  .card__old-price.price
+                    .price__sum 10 540
+                    .price__currency ₽
+                  .card__new-price.price
+                    .price__sum 12 290
+                    .price__currency ₽
+                .card__info-right
+                  button.btn-rounter.btn-buy  Купить
+              .card__status В наличии
+              .card__hidden-info.hidden-info
+                .hidden-info__title Механизм:
+                span.hidden-info__text Аккордеон
+                .hidden-info__title Размеры:
+                span.hidden-info__text 90см (В) × 95 см (Г) × 218см (Ш)
+                .hidden-info__title Спальное место:
+                span.hidden-info__text 160 см (Ш) × 218 см (Д)
+          li.cards__item.card.col            
+            .card__action.card__action--green
+              img.action-icon(src='/assets/img/icons/promo_white.svg' alt='promo')
+              span.card__action-text Кресло в подарок
+            img.card__image(src='/assets/img/content/2.png' alt='товар')
+            .card__colors.colors 
+              .color.color--red 
+              .color.color--orange
+              .color.color--green
+            .card__desc-wrap
+              p.card__desc Диван с декоративными подушками "Олимп" (Нексус)
+              .card__info
+                .card__info-left
+                  .card__old-price.price
+                    .price__sum 10 540
+                    .price__currency ₽
+                  .card__new-price.price
+                    .price__sum 12 290
+                    .price__currency ₽
+                .card__info-right
+                  button.btn-rounter.btn-buy  Купить
+              .card__status В наличии
+              .card__hidden-info.hidden-info
+                .hidden-info__title Механизм:
+                span.hidden-info__text Аккордеон
+                .hidden-info__title Размеры:
+                span.hidden-info__text 90см (В) × 95 см (Г) × 218см (Ш)
+                .hidden-info__title Спальное место:
+                span.hidden-info__text 160 см (Ш) × 218 см (Д)
+
+
+
+
+block script
+  script(type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js")
+  script(type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+  script(type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+  script(type="text/javascript").

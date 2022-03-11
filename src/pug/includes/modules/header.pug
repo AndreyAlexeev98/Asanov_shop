@@ -1,8 +1,11 @@
 header.header
   .container-layout.header__container  
     .header__left
-      .header__city-change.city-change Санкт-Петербург
-      button.address Магазины
+      +select('header__city-change') 
+      .address
+        svg.pointer-icon 
+          use(xlink:href='/assets/img/icons/sprite.svg#pointer') 
+        .address__text Магазины
     .header__right
       a.header__telephone.telephone(href='tel:+70000000000') +7 (800) 555-44-33
       button.btn-callback.btn-rounter Обратный звонок

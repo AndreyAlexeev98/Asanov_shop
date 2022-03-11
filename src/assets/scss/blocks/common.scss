@@ -32,6 +32,7 @@ button {
   }
   &-with-nav {
     display: flex;
+    position: relative;
   }
 }
 
@@ -59,21 +60,26 @@ button {
   display: flex;
   align-items: center;
   transition: color .3s;
-  &::before {
+  cursor: pointer;
+  .pointer-icon {
     width: 14px;
     height: 20px;
-    display: inline-block;
-    content: '';
     margin-right: 9px;
-    background-image: url(/assets/img/icons/pointer.svg);
-    transition: background-image .3s;
+    fill: #1A1A1A;
+    transition: fill .3s;
+  }
+  &__text {
+    color: #1A1A1A;
+    transition: color .3s;
   }
   &:hover {
-    color: #EE2A74;
-    transition: color .3s;
-    &::before {
-      background-image: url(/assets/img/icons/pointer-pink.svg);
-      transition: background-image .3s;
+    .pointer-icon {
+      fill: #EE2A74;
+      transition: fill .3s;
+    }
+    .address__text {
+      color: #EE2A74;
+      transition: color .3s;
     }
   }
 }
@@ -85,8 +91,6 @@ button {
     color: #EE2A74;
     transition: color .3s;
   }
-  
-
 }
 
 .btn-rounter {
@@ -113,6 +117,19 @@ button {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   padding: 8px 16px;
+  &::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #A2A0A3;
+  }
+  &:-moz-placeholder {
+    font-size: 14px;
+    color: #A2A0A3;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: #EE2A74;
+  }
 }
 
 .btn-search-input {
@@ -124,12 +141,27 @@ button {
 .btn-sign-in {
   display: flex;
   align-items: center;
-  &::before {
-  content: '';
-  width: 18px;
-  height: 18px;
-  margin-right: 7px;
-  background-image: url(/assets/img/icons/accaunt.svg);
+  cursor: pointer;
+  .accaunt-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 7px;
+    fill: #1a1a1a;
+    transition: fill .3s; 
+  }
+  &__text {
+    color: #1a1a1a;
+    transition: color .3s;
+  }
+  &:hover {
+    .accaunt-icon {
+      fill: #EE2A74;
+      transition: fill .3s; 
+    }
+    .btn-sign-in__text {
+      color: #EE2A74;
+      transition: color .3s;
+    }
   }
 }
 
@@ -140,6 +172,27 @@ button {
     height: 24px;
     margin-right: 10px;
     background-image: url(/assets/img/icons/promo.svg);
+  }
+}
+
+.colors {
+  display: flex; 
+  align-items: center;
+  .color {
+    width: 12px;
+    height: 12px;
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+    &--red {
+      background-image: url(/assets/img/icons/circle-red.svg);
+    }
+    &--orange {
+      background-image: url(/assets/img/icons/circle-orange.svg);
+    }
+    &--green {
+      background-image: url(/assets/img/icons/circle-green.svg);
+    }
   }
 }
 

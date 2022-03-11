@@ -8,6 +8,9 @@
     margin-bottom: 12px;
     margin-left: auto;
   }
+  &__list {
+    --bs-gutter-x: 0;
+  }
   &__item {
     border: 1px solid #E6E4E7;
     border-radius: 8px;
@@ -17,12 +20,12 @@
     transition: border-color .3s;
     display: flex;
     flex-direction: column;
-    &:not(:last-child) {
-      margin-right: 8px;
-    }
     &:hover {
       border-color: #EE2A74;
       transition: border-color .3s;
     }
   }
-}
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+ }

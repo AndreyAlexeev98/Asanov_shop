@@ -9,18 +9,19 @@
   &__name {
     width: 80px;
     margin-right: 13px;
-    background: left center no-repeat;
+    background-repeat: no-repeat;
+    background-position: left center;
     object-fit: cover;
     &.yandex {
       background-image: url(/assets/img/icons/yandex-market.svg);
-      height: 18px;
+      height: 23px;
       & + .review__rating {
         background-image: url(/assets/img/icons/rating-4-5.svg);
       }
     }
     &.google {
       background-image: url(/assets/img/icons/google.svg);
-      height: 18px;
+      height: 20px;
       & + .review__rating {
         background-image: url(/assets/img/icons/rating-4-5.svg);
       }

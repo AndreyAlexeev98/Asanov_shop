@@ -2,3 +2,20 @@ mixin item(title, description)
   .item
     h2(class="item-title")= title
     p(class="item-description")= description
+
+mixin select(wrap_class)
+  div(class=wrap_class)
+    form.select-custom
+      .__select(data-state='')
+        .__select__title(data-default='Option 0') Санкт-Петербург
+        .__select__content
+          input#singleSelect0.__select__input(type='radio' name='singleSelect' checked='')
+          label.__select__label(for='singleSelect0') Санкт-Петербург
+          input#singleSelect1.__select__input(type='radio' name='singleSelect')
+          label.__select__label(for='singleSelect1') Москва
+          input#singleSelect2.__select__input(type='radio' name='singleSelect' disabled='')
+          label.__select__label(for='singleSelect2') Новгород (недоступно)
+          input#singleSelect3.__select__input(type='radio' name='singleSelect')
+          label.__select__label(for='singleSelect3') Казань
+          input#singleSelect4.__select__input(type='radio' name='singleSelect')
+          label.__select__label(for='singleSelect4') Санкт-Петербург

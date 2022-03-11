@@ -20,20 +20,31 @@
       transition: stroke .3s;
     }
     &:hover {
-      border-color: #E6E4E7;
-      background-color: #F2F1F3;
+      border-color: #EE2A74;
+      background-color: #fff;
       transition: border-color .3s, background-color .3s; 
+      .arrow-icon {
+        stroke: #EE2A74;
+      }
     }
-    &.disabled {
+    &.disabled,
+    &.slick-disabled {
       border-color: #E6E4E7;
-      cursor: default;
       background-color: transparent;
+      &:hover {
+        background-color: #F2F1F3;
+        .arrow-icon {
+          stroke: #1A1A1A;
+        }
+      }
     }
   }
   &__left {
     margin-right: 16px;
+    border-color: #1A1A1A;
     .arrow-icon {
       transform: translate(-64%,-58%) rotate(180deg);
     }
+    
   }
 }
